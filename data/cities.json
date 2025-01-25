@@ -1,16 +1,28 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "https://flagcdn.com/w320/pt.png",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "id": "fd95",
+      "cityName": "New Cairo",
+      "country": "Egypt",
+      "emoji": "https://flagcdn.com/w320/eg.png",
+      "date": "2025-01-25T11:57:25.102Z",
+      "notes": "TEST\n",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
+        "lat": "30.03105542654023",
+        "lng": "31.464843750000004"
+      }
+    },
+    {
+      "id": "a254",
+      "cityName": "Kurmuk",
+      "country": "Sudan (the)",
+      "emoji": "https://flagcdn.com/w320/sd.png",
+      "date": "2025-01-25T12:14:02.667Z",
+      "notes": "AS\n",
+      "position": {
+        "lat": "9.795677582829743",
+        "lng": "34.01367187500001"
+      }
     }
   ]
 }
