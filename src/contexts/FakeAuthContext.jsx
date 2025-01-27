@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer } from "react"
+import Message from "../components/Message";
 
 
 const AuthContext = createContext();
@@ -27,10 +28,14 @@ const FAKE_USER = {
 function AuthProvider({ children }) {
     const [{ user, isAuthenticated }, dispatch] = useReducer(reducer, initialState)
 
-    function login(email, password) {
+    function login(email, password, onError) {
         // check if they okay
         if (email === FAKE_USER.email && password === FAKE_USER.password)
+        {
             dispatch({ type: 'login', payload: FAKE_USER })
+
+        }
+        else onError('INVALID CREDENTIAL');
     }
     function logout() {
         dispatch({ type: 'logout' })

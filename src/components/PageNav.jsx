@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
+import { ToastContainer } from "react-toastify";
 
 function PageNav() {
   return (
-    <nav className={styles.nav}>
+    <>
+      <nav className={styles.nav}>
       <Logo />
       <ul>
         <li>
@@ -18,8 +20,12 @@ function PageNav() {
             Login
           </NavLink>
         </li>
+        <li>
+
+        </li>
       </ul>
     </nav>
+    </>
   );
 }
 
